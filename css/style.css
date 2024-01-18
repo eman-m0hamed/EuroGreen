@@ -20,6 +20,7 @@
     } */
     .nav-link{
         color: #FFF;
+        text-transform: capitalize;
     }
     .search{
         border-left:1px solid black;
@@ -41,9 +42,11 @@
 
     .typingClass::after{
         content: "";
-        animation-name: typingSkill;
-        animation-duration: 7s;
+        /* animation-name: typingSkill; */
+        animation-duration: 6s;
         animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        /* animation-direction: alternate; */
     }
     
     @keyframes typingSkill{
@@ -59,8 +62,21 @@
         14% { content: "Technol|"; }
         16% { content: "Technolo|"; }
         18% { content: "Technology|"; }
-        30% { content: "Technolo|"; }
-        30% { content: "Techno|"; }
+        20% {
+          content: "\f06c";
+          font-family: "Font Awesome 5 Free";
+        }
+        /* end */
+        25% { content: "Technology|";}
+        30% { content: "Technolog|"; }
+        35% { content: "Technolo|"; }
+        40% { content: "Technol|"; }
+        50% { content: "Techno|"; }
+        60% { content: "Techn|"; }
+       70% { content: "Tech|"; }
+       80% { content: "Tec|"; }
+        90% { content: "Te|"; }
+        95% { content: "T|"; }
     
         100%{  }
     
@@ -90,7 +106,8 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
       }
       .creative-paragraph {
-        font-family: 'Patrick Hand', cursive;
+        /* font-family: 'Patrick Hand', cursive; */
+        font-family: sans-serif;
         color: #333; /* Dark gray color */
         text-align: justify;
         line-height: 1.6;
@@ -174,11 +191,8 @@
   #videoContainer {
     text-align: center;
   } */
-  /* styles.css */
 
-  /* styles.css */
-/* styles.css */
-/* styles.css */
+
 /*About us Right content*/
 .About-right-content{
   margin-top: 65px;
@@ -232,6 +246,7 @@
   text-decoration: none;
   opacity: 0.75;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 .menu__link:hover {
@@ -302,10 +317,28 @@
 }
 /*end footer*/
 
+.main-heading{
+  /* color: black !important; */
+}
 @media(max-width:768px){
   .text-justify{
     text-align: left;
   }
 }
 
+@keyframes revealAnimation {
+  0% {
+    /* opacity: 0; */
+    display: none;
+  }
+  100% {
+    /* opacity: 1; */
+    display: inline-block;
+  }
+}
+
+#animated-word span {
+  opacity: 1;
+  display: inline-block;
+}
 
