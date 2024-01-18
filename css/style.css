@@ -316,6 +316,10 @@
   .text-justify{
     text-align: left;
   }
+  footer .menu{
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 @keyframes revealAnimation {
