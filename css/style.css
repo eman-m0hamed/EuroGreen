@@ -319,11 +319,18 @@
   .text-justify{
     text-align: left;
   }
+
+  #innerBox{
+    width: 85vw;
+    height: 85vw;
+  }
   footer .menu{
     flex-direction: column;
     padding: 0;
     row-gap: 10px;
   }
+
+
 }
 
 @keyframes revealAnimation {
