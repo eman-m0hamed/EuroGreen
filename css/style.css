@@ -250,6 +250,9 @@
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .wave {
@@ -319,6 +322,7 @@
   footer .menu{
     flex-direction: column;
     padding: 0;
+    row-gap: 10px;
   }
 }
 
