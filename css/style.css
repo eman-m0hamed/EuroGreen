@@ -40,14 +40,6 @@
         margin-top: 50px;
     }
 
-    .typingClass::after{
-        content: "";
-        /* animation-name: typingSkill; */
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        /* animation-direction: alternate; */
-    }
     
     @keyframes typingSkill{
     
@@ -328,17 +320,14 @@
 
 @keyframes revealAnimation {
   0% {
-    /* opacity: 0; */
     display: none;
   }
   100% {
-    /* opacity: 1; */
     display: inline-block;
   }
 }
 
 #animated-word span {
-  opacity: 1;
   display: inline-block;
 }
 

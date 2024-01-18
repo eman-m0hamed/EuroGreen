@@ -194,7 +194,7 @@ function startWordAnimation() {
             // stop removing interval
             if (currentLetterIndex === 0) {
               clearInterval(endInterval);
-              setTimeout(startAnimation, 500); // Start animation again after a delay
+              setTimeout(startWordAnimation, 500); // Start animation again after a delay
             }
           }
         }, 300);
