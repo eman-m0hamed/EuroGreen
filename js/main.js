@@ -13,7 +13,7 @@ for (var i = 0; i < imgsElement.length; i++) {
     currentIndex = imgsElement.indexOf(event.target);
   });
 }
-nextElement.addEventListener("click", nextSlide);
+// nextElement.addEventListener("click", nextSlide);
 function nextSlide() {
   currentIndex++;
   if (currentIndex == imgsElement.length) {
@@ -24,7 +24,7 @@ function nextSlide() {
   innerBox.style.backgroundImage = "url(" + imgSrc + ")";
 }
 
-prevElement.addEventListener("click", prevSlide);
+// prevElement.addEventListener("click", prevSlide);
 function prevSlide() {
   currentIndex--;
   if (currentIndex < 0) {
@@ -35,26 +35,26 @@ function prevSlide() {
   innerBox.style.backgroundImage = "url(" + imgSrc + ")";
 }
 
-closeElement.addEventListener("click", closeSlide);
+// closeElement.addEventListener("click", closeSlide);
 function closeSlide() {
   boxContainer.classList.replace("d-flex", "d-none");
 }
 
-document.addEventListener("keyup", function (e) {
-  if (e.code == "ArrowRight") {
-    nextSlide();
-  } else if (e.code == "ArrowLeft") {
-    prevSlide();
-  } else if (e.code == "Escape") {
-    closeSlide();
-  }
-});
+// document.addEventListener("keyup", function (e) {
+//   if (e.code == "ArrowRight") {
+//     nextSlide();
+//   } else if (e.code == "ArrowLeft") {
+//     prevSlide();
+//   } else if (e.code == "Escape") {
+//     closeSlide();
+//   }
+// });
 
-boxContainer.addEventListener("click", function (e) {
-  if (e.target.getAttribute("id") == "boxContainer") {
-    closeSlide();
-  }
-});
+// boxContainer.addEventListener("click", function (e) {
+//   if (e.target.getAttribute("id") == "boxContainer") {
+//     closeSlide();
+//   }
+// });
 
 /*get started button*/
 // document.addEventListener('DOMContentLoaded', function() {
@@ -203,4 +203,15 @@ function startWordAnimation() {
   }, 300);
 }
 
-startWordAnimation();
+// startWordAnimation();
+
+
+var navbar = document.getElementById("main-nav");
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            navbar.classList.remove("transparent") 
+          } else {
+          navbar.classList.add("transparent") 
+        }
+    };
