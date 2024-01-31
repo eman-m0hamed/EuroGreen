@@ -13,11 +13,11 @@
 </head>
 <body>
   <!--start Navbar-->
-  <nav class="navbar navbar-expand-lg sticky-top bg-success">
+  <nav class="navbar navbar-expand-lg fixed-top bg-success transparent" id="main-nav">
     <div class="container">
       <a class="navbar-brand text-white fw-bold" href="../index.html">
         <!-- <img src="images/1-removebg-preview.png"width="70px" alt=""> -->
-        EuroGreen <i class="fa-solid fa-leaf"></i>
+        EuroGreen Technology<i class="fa-solid fa-leaf"></i>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,11 +25,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
           <li class="nav-item">
-            <a class="nav-link active p-lg-3 text-white" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link p-2 p-lg-3" href="./company.html">Company </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="./about.html">About </a>
+          <li class="nav-item ">
+            <a class="nav-link p-2 p-lg-3" href="./products.html">
+              Products
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3" href="./research.html">Research And Development</a>
@@ -37,23 +40,46 @@
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3" href="./environment.html">The environment </a>
           </li>
-          <li class="nav-item dropdown ">
-            <a class="nav-link p-2 p-lg-3" href="./products.html">
-              Products
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3" href="./contactUs.html">contacts</a>
           </li>
         </ul>
-        <div class="search ps-2 d-none d-lg-block">
+        <!-- <div class="search ps-2 d-none d-lg-block">
           <i class="fa-solid fa-magnifying-glass "></i>
-        </div>
+        </div> -->
         <a class="btn  main-btn rounded-pill ms-3 text-bg-light" href="">Login</a>
       </div>
     </div>
   </nav>
   <!--end navbar-->
+
+  <!--start landing(environment)page-->
+<div class="landing d-flex align-items-center" id="environment">
+  <div class="cover container">
+    <!-- <h1 id="animated-word" class="typingClass d-flex">
+      EuroGreen Technology
+      <i class='fa-solid fa-leaf'></i> 
+    </h1> -->
+    <div>
+      <p class="fw-bold header-main mt-5">
+        Empowering Growth, Nurturing Sustainabilit
+      </p>
+      <!-- <p class="fst-italic">Your Partner in Innovative Biostimulants for Thriving Agriculture</p> -->
+      <p class="header-secondary">
+        EuroGreen Technology is a pioneering innovation startup 
+        We are a pioneering startup dedicated to revolutionizing the agricultural 
+        landscape with natural biostimulators that promote plant growth, 
+        resistance to pests and environmental stress. 
+        Our commitment lies in providing sustainable solutions that not only 
+        promote environmental well-being but also contribute to the production of safe and healthy food. 
+        With a relentless focus on innovation, we are at the forefront of creating a positive impact on agriculture and food safety.
+
+      </p>
+    </div>
+  </div>
+</div>
+<!--end landing(environment)page-->
+
 
   <!--start environment page-->
   <div class="environment mt-5 mb-5 main-heading">
@@ -124,8 +150,8 @@
         </a></li>
     </ul>
     <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+      
+      <li class="menu__item"><a class="menu__link" href="./company.html">Company</a></li>
       <li class="menu__item"><a class="menu__link" href="./research.html">
           Research And Development
         </a></li>

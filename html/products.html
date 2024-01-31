@@ -13,11 +13,11 @@
 </head>
 <body>
   <!--start Navbar-->
-  <nav class="navbar navbar-expand-lg sticky-top bg-success">
+  <nav class="navbar navbar-expand-lg fixed-top bg-success transparent" id="main-nav">
     <div class="container">
       <a class="navbar-brand text-white fw-bold" href="../index.html">
         <!-- <img src="images/1-removebg-preview.png"width="70px" alt=""> -->
-        EuroGreen <i class="fa-solid fa-leaf"></i>
+        EuroGreen Technology<i class="fa-solid fa-leaf"></i>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,11 +25,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
           <li class="nav-item">
-            <a class="nav-link active p-lg-3 text-white" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link p-2 p-lg-3" href="./company.html">Company </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="./about.html">About </a>
+          <li class="nav-item ">
+            <a class="nav-link p-2 p-lg-3" href="./products.html">
+              Products
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3" href="./research.html">Research And Development</a>
@@ -37,23 +40,46 @@
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3" href="./environment.html">The environment </a>
           </li>
-          <li class="nav-item dropdown ">
-            <a class="nav-link p-2 p-lg-3" href="./products.html">
-              Products
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3" href="./contactUs.html">contacts</a>
           </li>
         </ul>
-        <div class="search ps-2 d-none d-lg-block">
+        <!-- <div class="search ps-2 d-none d-lg-block">
           <i class="fa-solid fa-magnifying-glass "></i>
-        </div>
+        </div> -->
         <a class="btn  main-btn rounded-pill ms-3 text-bg-light" href="">Login</a>
       </div>
     </div>
   </nav>
   <!--end navbar-->
+
+
+  <!--start landing(products)page-->
+<div class="landing d-flex align-items-center" id="products">
+  <div class="cover container">
+    <!-- <h1 id="animated-word" class="typingClass d-flex">
+      EuroGreen Technology
+      <i class='fa-solid fa-leaf'></i> 
+    </h1> -->
+    <div>
+      <p class="fw-bold header-main mt-5">
+        Empowering Growth, Nurturing Sustainabilit
+      </p>
+      <!-- <p class="fst-italic">Your Partner in Innovative Biostimulants for Thriving Agriculture</p> -->
+      <p class="header-secondary">
+        EuroGreen Technology is a pioneering innovation startup 
+        We are a pioneering startup dedicated to revolutionizing the agricultural 
+        landscape with natural biostimulators that promote plant growth, 
+        resistance to pests and environmental stress. 
+        Our commitment lies in providing sustainable solutions that not only 
+        promote environmental well-being but also contribute to the production of safe and healthy food. 
+        With a relentless focus on innovation, we are at the forefront of creating a positive impact on agriculture and food safety.
+
+      </p>
+    </div>
+  </div>
+</div>
+<!--end landing(products)page-->
 
 
     <!--start product page-->
@@ -63,11 +89,12 @@
           <div class="col-lg-12 text-center">
             <h1 class="animated-gradient-title mb-5 mt-5 text-success fw-bold main-heading">Products</h1>
             <div class="product-links">
-              <a href="#!" class="col-lg-2 me-3 text-decoration-none text-success fs-4">BioMaterials</a>
-              <a href="#!" class="col-lg-2 me-3 text-decoration-none text-success fs-4"> soil Hydrogel </a>
-              <a href="#!" class="col-lg-2 me-3 text-decoration-none text-success fs-4">Growth promoters</a>
-              <a href="#!" class="col-lg-2 me-3 text-decoration-none text-success fs-4">soil fertilizers</a>
-              <a href="#!" class="col-lg-2 me-3 text-decoration-none text-success fs-4">Biomedical Products</a>
+              <p class="d-inline product col-lg-2 me-2 text-decoration-none text-success fs-4">Biostimulant <span class="text-black"> | </span></p>
+              <p class="d-inline product col-lg-2 me-2 text-decoration-none text-success fs-4"> Soil Hydrogel <span class="text-black"> | </span> </p>
+              <p class="d-inline product col-lg-2 me-2 text-decoration-none text-success fs-4">Growth Promoters <span class="text-black"> | </span> </p>
+              <p class="d-inline product col-lg-2 me-2 text-decoration-none text-success fs-4">Soil Fertilizers <span class="text-black"> | </span></p>
+              <p class="d-inline product col-lg-2 me-2 text-decoration-none text-success fs-4">Biomedical Products <span class="text-black"> | </span> </p>
+              <p class="d-inline product col-lg-2 me-2 text-decoration-none text-success fs-4">Biopesticide </p>
             </div>
             <!-- <p class="text-muted">Agriculture and farming:  </p> -->
           </div>
@@ -76,31 +103,36 @@
           <div class="col-lg-12 ">
             <!-- <h2 class="text-success fw-bold">EuroGreen Technology </h2> -->
             <p class="text-muted overviewp">
-              EuroGreen Technology is pioneering new European generation of natural chelated-fertilizers with vital added
-              features working simultaneously as soil fertilizer, hydrogel and growth promotor with added protection
-              against diseases which admit the flexible vertical and horizontal farming extension
+              EuroGreen Technology spearheads a revolutionary European era in natural chelated-fertilizers, 
+              introducing groundbreaking formulations that multifunction as soil fertilizers, hydrogels, 
+              and growth promoters. 
+              These advanced fertilizers also provide enhanced protection against diseases, facilitating 
+              adaptable expansion in both vertical and horizontal farming.
             </p>
           </div>
         </div>
-        <div class="row mt-5 animated-text text-justify">
+        <div class="row mt-2 animated-text text-justify">
           <div class="col-lg-12">
             <!-- <h2 class="text-success fw-bold">The formulas</h2> -->
             <p class="text-muted overviewp">
-              The formulas are biocompatible and biodegradable, consisting of structurally-designed biopolymer derivatives
-              subjected to a series of chemically engineered modifications.
-              The formula loaded with essential plant's elements and nutrients in a water-base formula for organic
-              agricultural purposes with added acknowledged advantages to the environment and the customers.
+              Our formulas are not only biocompatible but also biodegradable, 
+              comprising structurally-designed chelated biopolymer derivatives that undergo meticulously engineered 
+              chemical modifications. Laden with vital plant elements and nutrients, 
+              our water-based formulas are tailored for organic agricultural applications, 
+              boasting environmentally friendly attributes for the benefit of both the ecosystem and our discerning customers.
             </p>
           </div>
         </div>
-        <div class="row mt-5 animated-text text-justify">
+        <div class="row mt-2 animated-text text-justify">
           <div class="col-lg-12">
             <!-- <h2 class="text-success fw-bold">The communication</h2> -->
             <p class="text-muted overviewp mb-5">
-              For a time of two years, the communication with the market was running including farmers, farms owners,
-              distributor, policy makers.. etc. The market survey included filed trials in different geographical regions
-              and different seasons.. Price versus quality comparing and adjustment with regard to the products in the
-              same category are well studied..
+              Over the past two years, our engagement with the market has been extensive, 
+              involving communication with various stakeholders such as farmers, farm owners, 
+              distributors, and policymakers. The comprehensive market survey incorporated 
+              field trials across diverse geographical regions and seasons, meticulously 
+              comparing price versus quality and fine-tuning our products to align with 
+              industry benchmarks within the same category.
             </p>
           </div>
         </div>
@@ -131,8 +163,8 @@
         </a></li>
     </ul>
     <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+      
+      <li class="menu__item"><a class="menu__link" href="./company.html">Company</a></li>
       <li class="menu__item"><a class="menu__link" href="./research.html">
           Research And Development
         </a></li>

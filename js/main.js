@@ -40,93 +40,6 @@ function closeSlide() {
   boxContainer.classList.replace("d-flex", "d-none");
 }
 
-// document.addEventListener("keyup", function (e) {
-//   if (e.code == "ArrowRight") {
-//     nextSlide();
-//   } else if (e.code == "ArrowLeft") {
-//     prevSlide();
-//   } else if (e.code == "Escape") {
-//     closeSlide();
-//   }
-// });
-
-// boxContainer.addEventListener("click", function (e) {
-//   if (e.target.getAttribute("id") == "boxContainer") {
-//     closeSlide();
-//   }
-// });
-
-/*get started button*/
-// document.addEventListener('DOMContentLoaded', function() {
-//     const playButton = document.getElementById('playButton');
-//     const videoContainer = document.getElementById('videoContainer');
-
-//     playButton.addEventListener('click', function() {
-//       // Show the video container
-//       videoContainer.classList.remove('hidden');
-
-//       // You can also play the video programmatically
-//       const overviewVideo = document.getElementById('overviewVideo');
-//       overviewVideo.play();
-//     });
-//   });
-// script.js
-// script.js
-// script.js
-
-// script.js
-// document.addEventListener('DOMContentLoaded', function() {
-//     const getStartedBtn = document.getElementById('getStartedBtn');
-//     const videoModal = document.getElementById('videoModal');
-//     const closeBtn = document.getElementById('closeBtn');
-//     const overviewVideo = document.getElementById('overviewVideo');
-
-//     getStartedBtn.addEventListener('click', function() {
-//       videoModal.classList.remove('hidden');
-//       overviewVideo.play();
-//     });
-
-//     closeBtn.addEventListener('click', function() {
-//       hideVideoModal();
-//     });
-
-//     overviewVideo.addEventListener('ended', function() {
-//       hideVideoModal();
-//     });
-
-//     function hideVideoModal() {
-//       videoModal.classList.add('hidden');
-//       overviewVideo.pause();
-//       overviewVideo.currentTime = 0; // Reset video to the beginning
-//     }
-//   });
-// script.js
-// document.addEventListener('DOMContentLoaded', function() {
-//     const getStartedBtn = document.getElementById('getStartedBtn');
-//     const videoModal = document.getElementById('videoModal');
-//     const closeBtn = document.getElementById('closeBtn');
-//     const overviewVideo = document.getElementById('overviewVideo');
-
-//     getStartedBtn.addEventListener('click', function() {
-//       videoModal.classList.remove('hidden');
-//       overviewVideo.play();
-//     });
-
-//     closeBtn.addEventListener('click', function() {
-//       hideVideoModal();
-//     });
-
-//     overviewVideo.addEventListener('ended', function() {
-//       hideVideoModal();
-//     });
-
-//     function hideVideoModal() {
-//       videoModal.classList.add('hidden');
-//       overviewVideo.pause();
-//       overviewVideo.currentTime = 0; // Reset video to the beginning
-//     }
-//   });
-
 
 
 // home page main heading animation
@@ -158,16 +71,6 @@ function startWordAnimation() {
       animatedWord.appendChild(letterSpan);
       currentLetterIndex++;
 
-      //   adding pointer span
-      //   const pointerSpan = document.createElement("span");
-      //   pointerSpan.textContent = "|";
-      //   pointerSpan.style.animation = "blinkAnimation 0.5s infinite";
-      //   animatedWord.appendChild(pointerSpan);
-
-      //   removing pointer span
-      // setTimeout(() => {
-      //     animatedWord.removeChild(pointerSpan);
-      //   }, 150);
     } else {
       clearInterval(startInterval);
       setTimeout(() => {
@@ -176,20 +79,9 @@ function startWordAnimation() {
 
             const letterSpan = animatedWord.lastChild;
 
-            // adding pointer span
-            // const pointerSpan = document.createElement("span");
-            // pointerSpan.textContent = "|";
-            // pointerSpan.style.animation = "blinkAnimation 0.5s infinite";
-            // animatedWord.appendChild(pointerSpan);
-
             // remove letter span
             animatedWord.removeChild(letterSpan);
             currentLetterIndex--;
-
-            // remove pointer span
-            // setTimeout(() => {
-            //   animatedWord.removeChild(pointerSpan);
-            // }, 150);
 
             // stop removing interval
             if (currentLetterIndex === 0) {
@@ -209,7 +101,7 @@ function startWordAnimation() {
 var navbar = document.getElementById("main-nav");
 
 window.onscroll = function () {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             navbar.classList.remove("transparent") 
           } else {
           navbar.classList.add("transparent") 
