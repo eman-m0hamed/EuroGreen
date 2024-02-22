@@ -40,8 +40,6 @@ function closeSlide() {
   boxContainer.classList.replace("d-flex", "d-none");
 }
 
-
-
 // home page main heading animation
 const word = [
   "T",
@@ -70,13 +68,11 @@ function startWordAnimation() {
       letterSpan.style.animation = `revealAnimation 0.5s forwards`;
       animatedWord.appendChild(letterSpan);
       currentLetterIndex++;
-
     } else {
       clearInterval(startInterval);
       setTimeout(() => {
         endInterval = setInterval(() => {
           if (currentLetterIndex > 0) {
-
             const letterSpan = animatedWord.lastChild;
 
             // remove letter span
@@ -97,13 +93,50 @@ function startWordAnimation() {
 
 // startWordAnimation();
 
-
 var navbar = document.getElementById("main-nav");
 
 window.onscroll = function () {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.classList.remove("transparent") 
-          } else {
-          navbar.classList.add("transparent") 
-        }
-    };
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+    ) {
+      navbar.classList.remove("transparent");
+    } else {
+      navbar.classList.add("transparent");
+    }
+  };
+  
+  
+  function formSubmit(event){
+    event.preventDefault();
+    sendEmail();
+  
+  }
+
+function sendEmail() {
+
+  let name = document.getElementById("nameInput").value;
+  let email = document.getElementById("emailInput").value;
+  let phone = document.getElementById("phoneInput").value;
+  let subject = document.getElementById("subjectInput").value;
+  let message = document.getElementById("messageInput").value;
+  // console.log(message);
+  // console.log(messageValue);
+let body = `Dear Eurogreen Tech Team,
+
+Please see below for the message and my contact information:
+
+Message:
+${message}
+
+Phone Number: ${phone}
+
+best regards,
+${name}
+
+`;
+const encodedBody = encodeURIComponent(body);
+  window.open(
+    `mailto:eurogreentech@outlook.com?subject=${subject}&body=${encodedBody}`
+  );
+}

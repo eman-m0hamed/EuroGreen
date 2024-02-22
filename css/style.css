@@ -358,7 +358,7 @@
   left:0;
   width: 100%;
   height: 100%;
-  background-color: #33333350;
+  background-color: #00000047;
   z-index: 1;
   
 }
@@ -386,12 +386,13 @@
 }
 #environment{
   background-image: url("../images/The\ Environment.jpg");
+  background-position: top;
 }
 #products{
   background-image: url("../images/Products\ Section.jpg");
 }
 #research-landing{
-  background-image: url("../images/Research\ and\ Development\ Section.jpg");
+  background-image: url("../images/Innovation-hero.png");
 }
 
 .transparent{
@@ -400,7 +401,6 @@
 
 .header-main{
   font-size: 60px;
-  width: 50vw;
 }
 
 .header-secondary{
@@ -432,11 +432,19 @@
 }
 
 .overviewp{
-  /* font-size: 20px; */
+  font-size: 20px;
 
 }
 .home-card .cover{
   width: 100%;
   height: 100%;
   background: #33333353;
+}
+
+.hover-underline:hover{
+  text-decoration: underline !important;
+}
+
+.w-45{
+  width: 45%;
 }
