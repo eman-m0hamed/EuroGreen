@@ -120,8 +120,8 @@ function sendEmail() {
   let phone = document.getElementById("phoneInput").value;
   let subject = document.getElementById("subjectInput").value;
   let message = document.getElementById("messageInput").value;
-  // console.log(message);
-  // console.log(messageValue);
+
+  
 let body = `Dear Eurogreen Tech Team,
 
 Please see below for the message and my contact information:
