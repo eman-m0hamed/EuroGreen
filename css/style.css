@@ -101,9 +101,6 @@
   background-position: center;
 }
 
-.carousel-heading{
-  
-}
 
 .card img{
   height: 350px;
@@ -393,25 +390,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 
 /*end footer*/
 
-@media (max-width: 768px) {
-  .text-justify {
-    text-align: left;
-  }
 
-  #innerBox {
-    width: 85vw;
-    height: 85vw;
-  }
-  footer .menu {
-    flex-direction: column;
-    padding: 0;
-    row-gap: 10px;
-  }
-}
 
 .landing {
   background-size: cover;
@@ -470,7 +454,7 @@
 
 .header-secondary {
   line-height: 2;
-  width: 75vw;
+  width: 75%;
   text-align: justify;
   font-size: 18px;
 }
@@ -518,3 +502,63 @@
 .carousel-heading h5{
   font-size: 40px;
 }
+
+
+
+
+@media screen and (max-width: 992px) {
+  .landing{
+    min-height: 70vh;
+  }
+  .header-main{
+    font-size: 40px;
+  }
+
+  .header-secondary{
+    width: 100%;
+    /* font-size: 15px; */
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .header-main{
+    font-size: 35px;
+  }
+  .header-secondary{
+    font-size: 15px;
+  }
+  .text-justify {
+    text-align: left;
+  }
+
+  #innerBox {
+    width: 85vw;
+    height: 85vw;
+  }
+  footer .menu {
+    flex-direction: column;
+    padding: 0;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+
+  .header-main{
+    font-size: 30px;
+  }
+  .header-secondary{
+    font-size: 14px;
+  }
+}
+@media (max-width: 420px) {
+  .header-main{
+    font-size: 25px;
+  }
+  /* .header-secondary{
+    font-size: 14px;
+  } */
+}
+
+
