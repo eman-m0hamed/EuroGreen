@@ -40,89 +40,44 @@ function closeSlide() {
   boxContainer.classList.replace("d-flex", "d-none");
 }
 
-// home page main heading animation
-const word = [
-  "T",
-  "e",
-  "c",
-  "h",
-  "n",
-  "o",
-  "l",
-  "o",
-  "g",
-  "y",
-  "<i class='fa-solid fa-leaf'></i>",
-];
-const animatedWord = document.getElementById("animated-word");
-
-function startWordAnimation() {
-  let currentLetterIndex = 0;
-  let startInterval;
-  let endInterval;
-  startInterval = setInterval(() => {
-    if (currentLetterIndex < word.length) {
-      // adding letter span
-      const letterSpan = document.createElement("span");
-      letterSpan.innerHTML = word[currentLetterIndex];
-      letterSpan.style.animation = `revealAnimation 0.5s forwards`;
-      animatedWord.appendChild(letterSpan);
-      currentLetterIndex++;
-    } else {
-      clearInterval(startInterval);
-      setTimeout(() => {
-        endInterval = setInterval(() => {
-          if (currentLetterIndex > 0) {
-            const letterSpan = animatedWord.lastChild;
-
-            // remove letter span
-            animatedWord.removeChild(letterSpan);
-            currentLetterIndex--;
-
-            // stop removing interval
-            if (currentLetterIndex === 0) {
-              clearInterval(endInterval);
-              setTimeout(startWordAnimation, 500); // Start animation again after a delay
-            }
-          }
-        }, 300);
-      }, 1500); // Delay before starting to remove letters
-    }
-  }, 300);
-}
-
 // startWordAnimation();
 
 var navbar = document.getElementById("main-nav");
 
 window.onscroll = function () {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
+  if (window.innerWidth >= 992) {
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
     ) {
       navbar.classList.remove("transparent");
     } else {
       navbar.classList.add("transparent");
     }
-  };
-  
-  
-  function formSubmit(event){
-    event.preventDefault();
-    sendEmail();
-  
+  } else {
+    navbar.classList.remove("transparent");
   }
+};
+
+window.onload = function () {
+  if (window.innerWidth < 992) {
+    navbar.classList.remove("transparent");
+  }
+};
+
+function formSubmit(event) {
+  event.preventDefault();
+  sendEmail();
+}
 
 function sendEmail() {
-
   let name = document.getElementById("nameInput").value;
   let email = document.getElementById("emailInput").value;
   let phone = document.getElementById("phoneInput").value;
   let subject = document.getElementById("subjectInput").value;
   let message = document.getElementById("messageInput").value;
 
-  
-let body = `Dear Eurogreen Tech Team,
+  let body = `Dear Eurogreen Tech Team,
 
 Please see below for the message and my contact information:
 
@@ -135,7 +90,7 @@ best regards,
 ${name}
 
 `;
-const encodedBody = encodeURIComponent(body);
+  const encodedBody = encodeURIComponent(body);
   window.open(
     `mailto:eurogreentech@outlook.com?subject=${subject}&body=${encodedBody}`
   );

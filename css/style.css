@@ -496,12 +496,9 @@
 }
 
 .carousel-heading{
-  bottom: 100px;
+  bottom: 20%;
 }
 
-.carousel-heading h5{
-  font-size: 40px;
-}
 
 
 
@@ -517,6 +514,11 @@
   .header-secondary{
     width: 100%;
     /* font-size: 15px; */
+  }
+
+  #carouselExampleAutoplaying{
+    width:90%;
+    /* height: 100vw; */
   }
   
 }
@@ -541,6 +543,10 @@
     flex-direction: column;
     padding: 0;
     row-gap: 10px;
+  }
+
+  .carousel-item{
+    height: 70vw;
   }
 }
 @media (max-width: 576px) {
